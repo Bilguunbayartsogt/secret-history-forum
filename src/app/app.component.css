@@ -1,0 +1,23 @@
+.header {
+  background-color: ghostwhite;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 30px; 
+}
+
+.theme {
+  font-size: 13px;
+  border: 0.3px solid gray; 
+  border-radius: 10px;
+  background-color: ghostwhite;
+}
+
+.theme:hover {
+  background-color: white;
+  cursor: pointer; 
+}
+
+.main {
+  display: flex; 
+}
