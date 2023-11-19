@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "myproject-67781": {
+      "hosting": {
+        "myFinal": [
+          "myproject-67781"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "myproject-67781"
+  }
+}
