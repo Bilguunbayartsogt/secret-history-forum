@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 
 import { environment } from './environments/environment';
+import { initializeApp } from 'firebase/app';
 
 @NgModule({
 	declarations: [AppComponent, HomeComponent, PostsComponent],
@@ -18,3 +19,5 @@ import { environment } from './environments/environment';
 	bootstrap: [AppComponent],
 })
 export class AppModule { }
+
+const firebaseapp = initializeApp(environment.firebaseConfig);
