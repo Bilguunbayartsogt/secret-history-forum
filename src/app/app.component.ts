@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
 
 
 @Component({	
@@ -11,7 +9,7 @@ import { getFirestore, doc, getDoc } from 'firebase/firestore';
 })
 export class AppComponent implements OnInit{
 
-	constructor(private firestore: AngularFirestore) {
+	constructor() {
 	}
 	ngOnInit() {
 		
