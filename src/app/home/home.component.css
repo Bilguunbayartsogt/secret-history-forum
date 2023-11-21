@@ -1,0 +1,49 @@
+.home-container {
+    display: flex;
+    width: 100vw;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: row;
+}
+
+.paragraph-text {
+    margin: 10px;
+}
+
+.paragraphs-container {
+    display: flex; 
+    flex-direction: column;
+    height: auto; 
+    padding: 30px;
+}
+
+.paragraph-number { 
+    text-align: center;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+.header {
+	background-color: ghostwhite;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 5px 30px;
+    width: 100%;
+}
+
+.theme {
+	font-size: 13px;
+	border: 0.3px solid gray;
+	border-radius: 10px;
+	background-color: ghostwhite;
+}
+
+.theme:hover {
+	background-color: white;
+	cursor: pointer;
+}

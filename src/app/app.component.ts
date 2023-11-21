@@ -17,21 +17,4 @@ export class AppComponent implements OnInit{
 ;
 
 	title = 'Home';
-	isDarkModeOn: Boolean = false;
-	mydata: any; 
-
-	onModeClick(): void {
-		this.isDarkModeOn = !this.isDarkModeOn;
-	}
-
-	onUpClick() {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}
-
-	onDownClick() {
-		window.scrollTo({
-			top: document.body.scrollHeight,
-			behavior: 'smooth',
-		});
-	}
 }

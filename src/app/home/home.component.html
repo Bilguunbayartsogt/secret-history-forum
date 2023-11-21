@@ -1,2 +1,21 @@
-<p>home works!</p>
-<app-posts></app-posts>
+<div class="home-container">
+    <app-nav-bar></app-nav-bar>
+    <div>
+        <div class="header">
+            <h1>𝕏𝔹</h1>
+            <button *ngIf="isDarkModeOn === false" class="theme" (click)="onModeClick()" type="button">
+                🌙 Dark Mode
+            </button>
+            <button *ngIf="isDarkModeOn" class="theme" (click)="onModeClick()" type="button">
+                🌞 Light Mode
+            </button>
+        </div>
+        <div class="paragraphs-container">
+            <div *ngFor="let paragraph of chapter.chapterParagraphs; index as i;" class="paragraph">
+                <p class="paragraph-number">{{ i + 1 }}</p>
+                <p [innerHTML]="paragraph" class="paragraph-text"></p>
+            </div>
+        </div>
+        <!-- <app-posts></app-posts> -->
+    </div>
+</div>

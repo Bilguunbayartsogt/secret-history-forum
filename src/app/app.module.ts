@@ -8,16 +8,14 @@ import { PostsComponent } from './posts/posts.component';
 
 import { environment } from './environments/environment';
 import { initializeApp } from 'firebase/app';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
-	declarations: [AppComponent, HomeComponent, PostsComponent],
-	imports: [
-		BrowserModule, 
-		AppRoutingModule, 
-	],
-	providers: [],
-	bootstrap: [AppComponent],
+  declarations: [AppComponent, HomeComponent, PostsComponent, NavBarComponent],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-const firebaseapp = initializeApp(environment.firebaseConfig);
+export class AppModule {
+  
+}

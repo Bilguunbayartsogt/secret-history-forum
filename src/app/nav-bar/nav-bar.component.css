@@ -1,0 +1,12 @@
+.nav-bar {
+    background-color: yellow;
+    padding: 10px;
+    width: 250px;
+    height: 100vh;
+}
+
+.chapters-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
