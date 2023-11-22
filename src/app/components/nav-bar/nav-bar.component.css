@@ -1,0 +1,38 @@
+.nav-bar {
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    color: rgb(213, 212, 212);
+    position: fixed;
+}
+
+.chapters-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.chapter-link {
+    width: 230px;
+    padding: 10px 3px;
+    margin: 0 5px;
+    background: linear-gradient(to right, white 70%, transparent 100%);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    height: calc(1em + 22px);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.chapter-link:hover {
+    border-radius: 5px;
+    background: rgb(57, 57, 57);
+    color: white;
+}
+
+.label {
+    margin: 20px auto 10px 8px;
+    font-size: 15px;
+    color: gray;
+}

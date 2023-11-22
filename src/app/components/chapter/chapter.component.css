@@ -1,0 +1,27 @@
+.paragraph {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5px rgb(173, 171, 171) solid; 
+    line-height: 1.5;
+}
+
+.paragraph-text {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.paragraphs-container {
+    display: flex; 
+    flex-direction: column;
+    height: auto; 
+    padding: 30px 150px;
+}
+
+.paragraph-number { 
+    text-align: center;
+    margin: 0 10px;
+    display: flex;
+    align-items: top;
+    font-size: 15px;
+    padding-top: 10px;
+}

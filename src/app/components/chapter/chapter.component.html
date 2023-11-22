@@ -1,0 +1,6 @@
+<div class="paragraphs-container">
+    <div *ngFor="let paragraph of chapter.chapterParagraphs; index as i;" class="paragraph">
+        <p class="paragraph-number">{{ i + 1 }}.</p>
+        <p [innerHTML]="paragraph" class="paragraph-text"></p>
+    </div>
+</div>
