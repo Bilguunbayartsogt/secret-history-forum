@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { titles } from 'src/data/chapters';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-
+  titles = titles;
 }

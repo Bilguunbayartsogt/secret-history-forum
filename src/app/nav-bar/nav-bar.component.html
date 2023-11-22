@@ -1,9 +1,8 @@
 <div class="nav-bar">
     <div class="chapters-list">
-        <a>first</a>
-        <a>first</a>
-        <a>first</a>
-        <a>first</a>
-        <a>first</a>
+        <p class="label">Chapters: </p>
+        <a *ngFor="let title of titles; index as i" class="chapter-link" [title]="title" href="_blank">
+            {{ i + 1 }}. {{ title }}
+        </a>
     </div>
 </div>
