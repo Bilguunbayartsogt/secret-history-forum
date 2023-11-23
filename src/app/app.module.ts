@@ -12,9 +12,10 @@ import { ChapterComponent } from './components/chapter/chapter.component';
 
 import { MarkdownModule } from 'ngx-markdown';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
  
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavBarComponent, ChapterComponent],
+  declarations: [AppComponent, HomeComponent, NavBarComponent, ChapterComponent, PagenotfoundComponent],
   imports: [
     BrowserModule, 
     AppRoutingModule, 

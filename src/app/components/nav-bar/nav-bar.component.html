@@ -1,7 +1,12 @@
 <div class="nav-bar">
     <div class="chapters-list">
         <p class="label">Chapters: </p>
-        <a *ngFor="let title of titles; index as i" class="chapter-link" [title]="title" href="_blank">
+        <a *ngFor="let title of titles; index as i"
+            class="chapter-link"
+            [title]="title"
+            [routerLink]="['/chapter', i+1]"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page">
             {{ i + 1 }}. {{ title }}
         </a>
     </div>
