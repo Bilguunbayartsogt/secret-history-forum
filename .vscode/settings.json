@@ -1,5 +1,8 @@
 {
   "prettier.tabWidth": 4,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  }
 }

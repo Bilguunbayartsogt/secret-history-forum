@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { chapters } from 'src/data/chapters';
 import { ChaptersInterface } from '../../chapters-interface';
-
 @Component({
   selector: 'app-chapter',
   templateUrl: './chapter.component.html',

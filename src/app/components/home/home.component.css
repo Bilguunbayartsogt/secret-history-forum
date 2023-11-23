@@ -10,7 +10,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 5px 30px;
-    width: 100%;
+    width: calc(100vw - 250px);
 }
 
 .theme {

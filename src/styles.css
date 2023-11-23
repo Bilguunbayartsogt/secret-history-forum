@@ -11,3 +11,17 @@
   padding-left: 20px;
   height: auto;
 }
+
+.chapter-container h1 {
+  font-size: 20px;
+}
+
+.chapter-container ol {
+  margin: 20px;
+  padding: 0;
+}
+
+.chapter-container p {
+  margin: 10px 20px;
+  padding: 5px 0;
+}

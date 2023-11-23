@@ -10,10 +10,20 @@ import { initializeApp } from 'firebase/app';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { ChapterComponent } from './components/chapter/chapter.component';
 
+import { MarkdownModule } from 'ngx-markdown';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+ 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavBarComponent, ChapterComponent],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    BrowserModule, 
+    AppRoutingModule, 
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient }),
+    MarkdownModule.forChild()
+  ],
+  providers: [
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
