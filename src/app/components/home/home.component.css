@@ -1,26 +1,33 @@
+.home-full {
+	display: flex;
+	flex-direction: column;
+}
+
 .home-container {
-    display: flex;
-    width: 100vw;
-	padding-left: 250px;
+	margin-left: 250px;
+	width: calc(100vw - 250px);
+}
+
+@media screen and (max-width: 1100px) {
+    .home-container {
+        margin-left: 0;
+		width: 100vw;
+    }
 }
 
 .header {
-	background-color: ghostwhite;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 5px 30px;
-    width: calc(100vw - 250px);
+	padding: 20px 30px;
 }
 
 .theme {
 	font-size: 13px;
 	border: 0.3px solid gray;
 	border-radius: 10px;
-	background-color: ghostwhite;
 }
 
 .theme:hover {
-	background-color: white;
 	cursor: pointer;
 }

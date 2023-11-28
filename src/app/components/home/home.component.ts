@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ChapterComponent } from '../chapter/chapter.component';
 
 @Component({
@@ -6,6 +6,9 @@ import { ChapterComponent } from '../chapter/chapter.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
+
+@Output()
+
 export class HomeComponent{
 
   isDarkModeOn: Boolean = false;

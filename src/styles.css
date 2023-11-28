@@ -1,5 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --light-theme-text-color: black;
+  --dark-theme-text-color: rgb(231, 230, 230);
+  --light-theme-background-color: ghostwhite;
+  --dark-theme-background-color: #15202B;
+}
 
+.light-theme {
+  color: var(--light-theme-text-color);
+  background-color: var(--light-theme-background-color);
+}
+
+.dark-theme {
+  color: var(--dark-theme-text-color);
+  background-color: var(--dark-theme-background-color);
+}
 
 * {
   box-sizing: border-box;
@@ -28,3 +43,4 @@
   padding: 5px 0;
   line-height: 1.5;
 }
+

@@ -1,3 +1,6 @@
 .chapter-container {
-    padding: 30px 200px;
+    max-width: 900px;
+    min-width: 300px;
+    margin: 50px auto; 
+    padding: 0 20px;
 }

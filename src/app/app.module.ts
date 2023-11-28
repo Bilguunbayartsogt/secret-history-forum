@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgClass } from '@angular/common'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
   declarations: [AppComponent, HomeComponent, NavBarComponent, ChapterComponent, PagenotfoundComponent],
   imports: [
     BrowserModule, 
+    NgClass,
     AppRoutingModule, 
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient }),
