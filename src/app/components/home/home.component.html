@@ -1,6 +1,6 @@
 <div class="home-full">
-    <app-nav-bar></app-nav-bar>
-    <div class="home-container">
+    <app-nav-bar [isSidebarHidden]="isSidebarHidden"></app-nav-bar>
+    <div [ngClass]="isSidebarHidden ? 'home-container-full transition' : 'home-container transition'">
         <div [ngClass]='isDarkModeOn ? "dark-theme": "light-theme"'>
             <div class="header">
                 <h1>𝕏𝔹</h1>
@@ -11,6 +11,8 @@
                     🌞 Light Mode
                 </button>
             </div>
+        </div>
+        <div class="close-sidebar" (click)="onCloseSidebarClick()" [ngClass]="isSidebarHidden ? 'sidebar-hidden' : 'close-sidebar'">
         </div>
         <router-outlet></router-outlet>
     </div>

@@ -13,6 +13,7 @@ export class HomeComponent{
 
   isDarkModeOn: Boolean = false;
   mydata: any;
+  isSidebarHidden = false; 
 
   onModeClick(): void {
     this.isDarkModeOn = !this.isDarkModeOn;
@@ -27,5 +28,9 @@ export class HomeComponent{
       top: document.body.scrollHeight,
       behavior: 'smooth',
     });
+  }
+
+  onCloseSidebarClick() {
+    this.isSidebarHidden = !this.isSidebarHidden;
   }
 }

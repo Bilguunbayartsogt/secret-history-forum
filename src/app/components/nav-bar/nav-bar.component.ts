@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { titles } from 'src/data/chapters';
 import { ChapterComponent } from 'src/app/components/chapter/chapter.component';
 import { CommonModule } from '@angular/common';
@@ -10,4 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 export class NavBarComponent {
   titles = titles;
+
+  @Input() isSidebarHidden?: Boolean;
 }

@@ -6,30 +6,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .nav-bar {
-        display: none;
-    }
+    
 }
 
-.hide-nav-bar {
-    position: relative;
-    top: 45vh;
-    left: 255px;
-}
-
-.hide-nav-bar-button {
-    height: 30px;
-    width: 8px;
-    background-color: gray;
-    border-radius: 5px;
-}
-
-.hide-nav-bar-button:hover {
-    background-color: black;
-    transition-duration: 500ms;
-    display: block;
-}
-
-.drop-down {
-    padding: 5px;
-}
